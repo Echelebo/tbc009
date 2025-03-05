@@ -76,7 +76,7 @@ class UpdateController extends Controller
             //log transaction
            // recordNewTransaction(10, $user->id, 'debit', "Send Button Payment");
 
-            $update->status == 1;
+            $update->status = 1;
             $is_processed = $update->save();
             if ($is_processed) {
                 return response()->json(['message' => 'Payment approved successfully']);
