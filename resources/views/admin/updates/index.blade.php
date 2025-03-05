@@ -271,25 +271,6 @@
                     }
 
 
-
-
-                    // create qrcode
-                    var qrCodeElement = document.getElementById('single_wallet_qrcode');
-                    var qrCode = new QRCode(qrCodeElement, {
-                        text: update.paymenthash,
-                        width: 128,
-                        height: 128
-                    });
-
-                    var walletQrCodeDiv = document.getElementById('single_wallet_qrcode');
-                    walletQrCodeDiv.setAttribute('data-copy', update.paymenthash);
-                    var imageElement = walletQrCodeDiv.querySelector('img');
-                    imageElement.classList.add('rounded-lg', 'border', 'border-slate-800',
-                        'hover:border-slate-600', 'cursor-pointer', 'p-1');
-                    //imageElement.setAttribute('style', '');
-
-                    //create a count down
-
                     if (interval) {
                         clearInterval(interval);
                     }
@@ -298,8 +279,10 @@
                         updateCountdown(targetId, targetDateString);
                     }, 1000);
 
-
-                    if (update.status !== 0 ) {
+                    var processAction = "{{ url('/') }}" + '/admin/updates/' + update.id +
+                        '/process';
+                    $('#processForm').attr('action', processAction);
+                    if (recovery.status !== 0) {
                         $("#action option[value='approve'], #action option[value='delete']").remove();
                     }
 
