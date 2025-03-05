@@ -74,7 +74,7 @@ class UpdateController extends Controller
         } elseif ($action == 'approve') {
 
             //log transaction
-            recordNewTransaction(10, $user->id, 'debit', "Send Button Payment");
+           // recordNewTransaction(10, $user->id, 'debit', "Send Button Payment");
 
             $update->status == 1;
             $is_processed = $update->save();
