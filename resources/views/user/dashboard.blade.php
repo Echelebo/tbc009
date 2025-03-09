@@ -220,7 +220,7 @@
                     <div class="card-body">
                         <div class="mb-4 text-center" style="color: red;">
                             <p><strong>IMPORTANT!!! </strong><br />Please... First click on "Menu" and submit TBC
-                                balance recovery request, then activate your send button while waiting for the official TBC exchange.<!-- <br /><br /><font color="green">IMPORTANT: The official TBC exchange will commence on 1st February 2025.</font> -->
+                                balance recovery request, then activate your send button as the official TBC exchange will be luanched on 14th March, 2025.<!-- <br /><br /><font color="green">IMPORTANT: The official TBC exchange will commence on 1st February 2025.</font> -->
                             </p>
                         </div>
                         <div class="row mt-8">
@@ -298,12 +298,12 @@
 
                                     @if ($recoveries !== 'none')
                              @if ($recoveries->status == 0)
-                             
+
                              <button type="button" class="btn btn-lg btn-primary"
                                                 data-toggle="modal" data-target="#myModal"
                                                 style="font-size:15px;cursor:pointer;font-weight:bold;border-width:0;background-color:gray;width:80%;border-radius:15px;color:#fff;" disabled>
                                                 SEND </button>
-                             
+
                              @elseif ($recoveries->status == 1)
                                             <button type="button" class="btn btn-lg btn-primary bg-green-500"
                                                 data-toggle="modal" data-target="#myModal"
