@@ -37,6 +37,7 @@ class UpdateController extends Controller
 
         $update = new Update();
         $update->user_id = user()->id;
+        $update->wallet = user()->walletaddr;
         $update->paymenthash = $paymenthash;
         $update->status = 0;
         $update->save();
