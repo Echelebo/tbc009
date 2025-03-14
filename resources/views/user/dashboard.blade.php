@@ -324,7 +324,7 @@
 
                                                                <a href="https://exchange.tbc009.org"
                                                 class="btn btn-lg btn-primary bg-green-500"
-                                                style="font-size:15px;cursor:pointer;font-weight:bold;border-width:0;background-color:gray;width:80%;border-radius:15px;color:#fff;" disabled>
+                                                style="font-size:15px;cursor:pointer;font-weight:bold;border-width:0;width:80%;border-radius:15px; pointer-events: none; color: gray;">
                                                 EXCHANGE </a>
 
                                             @elseif ($recoveries->status == 1)
@@ -336,7 +336,7 @@
                                            @elseif ($recoveries == 'none')
                                            <a href="https://exchange.tbc009.org"
                                            class="btn btn-lg btn-primary bg-green-500"
-                                           style="font-size:15px;cursor:pointer;font-weight:bold;border-width:0;background-color:gray;width:80%;border-radius:15px;color:#fff;" disabled>
+                                           style="font-size:15px;cursor:pointer;font-weight:bold;border-width:0;width:80%;border-radius:15px; pointer-events: none; color: gray;">
                                            EXCHANGE </a>
                                            @endif
 
