@@ -220,7 +220,7 @@
                     <div class="card-body">
                         <div class="mb-4 text-center" style="color: red;">
                             <p><strong>IMPORTANT!!! </strong><br />Please... First click on "Menu" and submit TBC
-                                balance recovery request, then activate your send button as the official TBC exchange will be luanched on 14th March, 2025.<!-- <br /><br /><font color="green">IMPORTANT: The official TBC exchange will commence on 1st February 2025.</font> -->
+                                balance recovery request, then activate your send button to enable your send and exchange button.<!-- <br /><br /><font color="green">IMPORTANT: The official TBC exchange will commence on 1st February 2025.</font> -->
                             </p>
                         </div>
                         <div class="row mt-8">
